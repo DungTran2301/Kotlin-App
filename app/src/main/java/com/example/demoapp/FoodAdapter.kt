@@ -9,11 +9,9 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 
-class FoodAdapter: RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
-    private var titles = arrayOf("Burger", "Chicken", "Alcoholic", "Hotdog", "Egg coffee", "Pancake", "Strawberry", "Sweet Pea", "Burger", "Chicken", "Hotdog", "Pancake")
-    private var prices = arrayOf(100, 150, 80, 50, 60, 75, 100, 95, 100, 150, 50, 75)
-    private var images = arrayOf(R.drawable.ic_burger, R.drawable.ic_chicken, R.drawable.ic_alcoholic, R.drawable.ic_hotdog, R.drawable.ic_eggcoffee, R.drawable.ic_pancake, R.drawable.ic_strowberry,  R.drawable.ic_sweetpea, R.drawable.ic_burger, R.drawable.ic_chicken, R.drawable.ic_hotdog, R.drawable.ic_pancake)
-    private var dishList: ArrayList<Dish> = ArrayList()
+class FoodAdapter(var clickListner: OnDishItemClickListner): RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
+
+   private var dishList: ArrayList<Dish> = ArrayList()
 
     fun setData(dishList: ArrayList<Dish>) {
         this.dishList = dishList
@@ -25,14 +23,14 @@ class FoodAdapter: RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: FoodAdapter.ViewHolder, position: Int) {
-        holder.itemTitle.text = dishList[position].name
-        holder.itemImage.setImageResource(dishList[position].image)
-        holder.itemPrice.text = String.format("%,d", dishList[position].price * 1000) + " Đ"
-        holder.itemDetail.text = dishList[position].detail
+//        holder.itemTitle.text = dishList[position].name
+//        holder.itemImage.setImageResource(dishList[position].image)
+//        holder.itemPrice.text = String.format("%,d", dishList[position].price * 1000) + " Đ"
+//        holder.itemDetail.text = dishList[position].detail
+        holder.initialize(dishList.get(position), clickListner)
     }
 
     override fun getItemCount(): Int {
-        if (dishList.size == 0) return 0
         return dishList.size
     }
 
@@ -47,5 +45,19 @@ class FoodAdapter: RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
             itemDetail = itemView.findViewById(R.id.tv_detail)
             itemPrice = itemView.findViewById(R.id.tv_price)
         }
+
+        fun initialize(item: Dish, action: OnDishItemClickListner) {
+            itemImage.setImageResource(item.image)
+            itemTitle.text = item.name
+            itemPrice.text = String.format("%,d", item.price * 1000) + " Đ"
+            itemDetail.text = item.detail
+
+            itemView.setOnClickListener{
+                action.onItemClick(item, adapterPosition)
+            }
+        }
+    }
+    interface OnDishItemClickListner{
+        fun onItemClick(item: Dish, position: Int)
     }
 }
