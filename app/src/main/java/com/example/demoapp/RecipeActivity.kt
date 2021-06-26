@@ -17,8 +17,9 @@ class RecipeActivity : AppCompatActivity() {
         val itemPrice: TextView = findViewById(R.id.tv_recipe_price)
         itemTitle.text = intent.getStringExtra("TITLE")
         itemDetail.text = intent.getStringExtra("DETAIL")
-        itemPrice.text = intent.getStringExtra("PRICE")
-        intent.getStringExtra("IMAGE")?.let { itemImage.setImageResource(it.toInt()) }
+        itemPrice.text = intent.getIntExtra("PRICE", 1).toString()
+        itemImage.setImageResource(intent.getIntExtra("IMAGE", 1))
     }
 }
+
 
