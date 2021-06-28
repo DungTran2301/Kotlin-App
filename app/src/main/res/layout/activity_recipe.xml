@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".RecipeActivity">
 
-    <ImageView
-        android:id="@+id/top_bg_logo"
-        android:layout_width="411dp"
-        android:layout_height="83dp"
-        android:background="#1E8ADF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ab_layout_recipe"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="16dp"
-        android:text="Food recipe"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/recipe_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/blue_theme"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Recipe" />
+    </com.google.android.material.appbar.AppBarLayout>
     <RelativeLayout
         android:layout_width="410dp"
         android:layout_height="654dp"
@@ -39,12 +51,14 @@
             android:id="@+id/img_recipe_image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginRight="1dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_burger" />
 
         <TextView
@@ -62,22 +76,27 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_recipe_detail"
-            android:layout_width="399dp"
-
-            android:layout_height="340dp"
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/img_recipe_image"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="74dp"
-            android:paddingLeft="10dp"
-            android:text="@string/app_name"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="71dp">
+
+            <TextView
+                android:id="@+id/tv_recipe_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="74dp"
+                android:text="@string/app_name"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="" />
+        </ScrollView>
 
         <TextView
             android:id="@+id/tv_recipe_price"
@@ -94,4 +113,4 @@
             android:textSize="16sp" />
 
     </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

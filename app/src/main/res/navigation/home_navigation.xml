@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeMainFragment">
+
+    <fragment
+        android:id="@+id/homeMainFragment"
+        android:name="com.example.demoapp.HomeMainFragment"
+        android:label="fragment_home_main"
+        tools:layout="@layout/fragment_home_main">
+        <action
+            android:id="@+id/action_homeMainFragment_to_homeMealFragment"
+            app:destination="@id/homeMealFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeMealFragment"
+        android:name="com.example.demoapp.HomeMealFragment"
+        android:label="fragment_home_meal"
+        tools:layout="@layout/fragment_home_meal" >
+        <action
+            android:id="@+id/action_homeMealFragment_to_homeDishFragment5"
+            app:destination="@id/homeDishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeDishFragment"
+        android:name="com.example.demoapp.HomeDishFragment"
+        android:label="fragment_home_dish"
+        tools:layout="@layout/fragment_home_dish" >
+        <action
+            android:id="@+id/action_homeDishFragment_to_homeDrinkFragment3"
+            app:destination="@id/homeDrinkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeDrinkFragment"
+        android:name="com.example.demoapp.HomeDrinkFragment"
+        android:label="fragment_home_drink"
+        tools:layout="@layout/fragment_home_drink" >
+        <action
+            android:id="@+id/action_homeDrinkFragment_to_homeMainFragment"
+            app:destination="@id/homeMainFragment" />
+    </fragment>
+</navigation>

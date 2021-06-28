@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
         val homeFragment = HomeFragment()
         val listFragment = ListFragment()
         val settingsFragment = SettingsFragment()
@@ -33,7 +31,6 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
     }
 
     private fun makeCurrentFragment(fragment: Fragment) =

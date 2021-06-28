@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_common"
+        android:icon="@drawable/ic_home"
+        android:title="Chung"/>
+    <item
+        android:id="@+id/ic_meal"
+        android:icon="@drawable/ic_home"
+        android:title="Bữa ăn"/>
+    <item
+        android:id="@+id/ic_dish"
+        android:icon="@drawable/ic_list"
+        android:title="Món ngon"/>
+    <item
+        android:id="@+id/ic_drink"
+        android:icon="@drawable/ic_settings"
+        android:title="Đồ uống"/>
+</menu>
