@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -15,7 +16,8 @@ class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner {
     private var layoutDishManager: RecyclerView.LayoutManager? = null
     lateinit var recyclerViewMeal: RecyclerView
     lateinit var recyclerViewDish: RecyclerView
-
+    lateinit var tvViewAllMeal: TextView
+    lateinit var tvViewAllDish: TextView
     lateinit var mealAdapter: MealAdapter
     lateinit var dishHomeMainAdapter: DishHomeMainAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +30,8 @@ class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner {
         layoutMealManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         layoutDishManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         addData()
+        tvViewAllMeal = view.findViewById(R.id.tv_view_all_meal)
+        tvViewAllDish = view.findViewById(R.id.tv_view_all_dish)
 
         recyclerViewMeal = view.findViewById(R.id.rcv_meal_in_main_home)
         recyclerViewMeal.layoutManager = layoutMealManager
@@ -42,6 +46,16 @@ class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner {
         dishHomeMainAdapter = DishHomeMainAdapter(this)
         dishHomeMainAdapter.setData(dishList)
         recyclerViewDish.adapter = dishHomeMainAdapter
+
+        tvViewAllMeal.setOnClickListener {
+            val homeMealFragment = HomeMealFragment()
+            makeCurrentFragment(homeMealFragment)
+        }
+
+        tvViewAllDish.setOnClickListener {
+            val homeDishFragment = HomeDishFragment()
+            makeCurrentFragment(homeDishFragment)
+        }
 
         return view
     }
@@ -59,4 +73,9 @@ class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner {
     override fun onItemClick(item: Meal, position: Int) {
         TODO("Not yet implemented")
     }
+    private fun makeCurrentFragment(fragment: Fragment) =
+        activity?.supportFragmentManager?.beginTransaction()?.apply {
+            replace(R.id.nav_host_home_fragment, fragment)
+            commit()
+        }
 }

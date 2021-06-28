@@ -56,10 +56,9 @@
                 android:textStyle="normal"/>
 
             <TextView
+                android:id="@+id/tv_view_all_meal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="clip_horizontal"
-                android:paddingRight="5dp"
                 android:text="VIEW ALL"
                 android:textColor="@color/gray"
                 android:textSize="15dp"
@@ -95,10 +94,9 @@
                 android:textStyle="normal"/>
 
             <TextView
+                android:id="@+id/tv_view_all_dish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="clip_horizontal"
-                android:paddingRight="5dp"
                 android:text="VIEW ALL"
                 android:textColor="@color/gray"
                 android:textSize="15dp"
