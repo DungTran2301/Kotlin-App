@@ -15,10 +15,8 @@ class RecipeActivity : AppCompatActivity() {
         val itemImage: ImageView = findViewById(R.id.img_recipe_image)
         val itemTitle: TextView = findViewById(R.id.tv_recipe_title)
         val itemDetail: TextView = findViewById(R.id.tv_recipe_detail)
-        val itemPrice: TextView = findViewById(R.id.tv_recipe_price)
         itemTitle.text = intent.getStringExtra("TITLE")
         itemDetail.text = intent.getStringExtra("DETAIL")
-        itemPrice.text = intent.getIntExtra("PRICE", 1).toString()
         itemImage.setImageResource(intent.getIntExtra("IMAGE", 1))
 
         recipeNavigation.setNavigationOnClickListener {

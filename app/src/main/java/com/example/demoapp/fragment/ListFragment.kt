@@ -40,45 +40,10 @@ class ListFragment : Fragment(), FoodAdapter.OnDishItemClickListner{
         return view
     }
     fun addDish() {
-        dishList.add(Dish("Burger", 100, R.drawable.ic_burger, "Ingredients\n" +
-                "½ tbsp olive oil\n" +
-                "1 onion, peeled and finely chopped\n" +
-                "1 x 500g pack British Beef Steak Mince 15% fat\n" +
-                "1 tsp mixed dried herbs\n" +
-                "1 egg, beaten\n" +
-                "4 slices mature Cheddar (optional)\n" +
-                "4 white rolls\n" +
-                "few round lettuce leaves, torn\n" +
-                "1 beef tomato, sliced\n" +
-                "ketchup, to serve (optional)"+
-                "1 egg, beaten\n" +
-                "4 slices mature Cheddar (optional)\n" +
-                "4 white rolls\n" +
-                "few round lettuce leaves, torn\n" +
-                "1 beef tomato, sliced\n" +
-                "ketchup, to serve (optional)"))
-        dishList.add(Dish("Chicken", 150, R.drawable.ic_chicken, "Ingredients\n" +
-                "½ tbsp olive oil\n" +
-                "1 onion, peeled and finely chopped\n" +
-                "1 x 500g pack British Beef Steak Mince 15% fat\n" +
-                "1 tsp mixed dried herbs\n" +
-                "1 egg, beaten\n" +
-                "4 slices mature Cheddar (optional)\n" +
-                "4 white rolls\n" +
-                "few round lettuce leaves, torn\n" +
-                "1 beef tomato, sliced\n" +
-                "ketchup, to serve (optional)"))
-        dishList.add(Dish("Alcoholic", 70, R.drawable.ic_alcoholic, "Ingredients\n" +
-                "½ tbsp olive oil\n" +
-                "1 onion, peeled and finely chopped\n" +
-                "1 x 500g pack British Beef Steak Mince 15% fat\n" +
-                "1 tsp mixed dried herbs\n" +
-                "1 egg, beaten\n" +
-                "4 slices mature Cheddar (optional)\n" +
-                "4 white rolls\n" +
-                "few round lettuce leaves, torn\n" +
-                "1 beef tomato, sliced\n" +
-                "ketchup, to serve (optional)"))
+        dishList.add(Dish("Cá lóc kho nghệ", 100, R.drawable.ca_loc_kho_nghe, resources.getString(R.string.ca_loc_kho_nghe)))
+
+        dishList.add(Dish("Rau muống xào tỏi", 20, R.drawable.rau_muong_xao_toi, resources.getString(R.string.rau_muong_xao_toi)))
+        dishList.add(Dish("Mì Ý spaghetti", 70, R.drawable.ic_alcoholic, resources.getString(R.string.my_y)))
         dishList.add(Dish("Egg coffee", 70, R.drawable.ic_eggcoffee, "Ingredients\n" +
                 "½ tbsp olive oil\n" +
                 "1 onion, peeled and finely chopped\n" +

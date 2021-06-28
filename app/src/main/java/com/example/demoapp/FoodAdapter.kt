@@ -37,12 +37,10 @@ class FoodAdapter(var clickListner: OnDishItemClickListner): RecyclerView.Adapte
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         var itemImage: ImageView
         var itemTitle: TextView
-        var itemDetail: TextView
         var itemPrice: TextView
         init {
             itemImage = itemView.findViewById(R.id.food_image)
             itemTitle = itemView.findViewById(R.id.tv_title)
-            itemDetail = itemView.findViewById(R.id.tv_detail)
             itemPrice = itemView.findViewById(R.id.tv_price)
         }
 
@@ -50,7 +48,6 @@ class FoodAdapter(var clickListner: OnDishItemClickListner): RecyclerView.Adapte
             itemImage.setImageResource(item.image)
             itemTitle.text = item.name
             itemPrice.text = String.format("%,d", item.price * 1000) + " Đ"
-            itemDetail.text = item.detail
 
             itemView.setOnClickListener{
                 action.onItemClick(item, adapterPosition)
