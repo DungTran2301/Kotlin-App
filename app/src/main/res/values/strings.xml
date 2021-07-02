@@ -2,66 +2,100 @@
     <string name="app_name">Demo App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="ca_loc_kho_nghe">Bước 1: Sơ chế cá lóc và nguyên liệu
+    <string name="ca_loc_kho_nghe">Bước 1: Sơ chế cá lóc và nguyên liệu\n
 Cá lóc mua về đem làm sạch bằng cách lấy con dao nhỏ mũi nhọn cạo sạch vảy trở lại. Dùng rượu gạo chà xát lên thân cá, làm sạch tất cả phần nhơn nhớt của cá lóc đi. Rửa cá trở lại cho thật sạch nhiều lần với vòi nước. Xắt cá thành các lát vừa ăn rồi cho vào tô.
 
-Lưu ý khi chọn cá: bạn nên chọn những con có kích cỡ vừa vì cá lóc nhỏ sẽ có thịt dai ngọt vừa ăn. Cá cỡ nhỏ quá thì nhiều xương và thịt sẽ nhũn nhũn không dai ngon. Ngược lại nếu như cá lớn quá thì thịt bị bở, xương lại rất cứng không ngon. Nên chọn những con cá có lớp da bóng, đặc biệt là cá cần tươi sống.
+\nLưu ý khi chọn cá: bạn nên chọn những con có kích cỡ vừa vì cá lóc nhỏ sẽ có thịt dai ngọt vừa ăn. Cá cỡ nhỏ quá thì nhiều xương và thịt sẽ nhũn nhũn không dai ngon. Ngược lại nếu như cá lớn quá thì thịt bị bở, xương lại rất cứng không ngon. Nên chọn những con cá có lớp da bóng, đặc biệt là cá cần tươi sống.
 
-Gừng, nghệ tươi cạo sạch vỏ, rửa sạch và cắt thành miếng.
+\nGừng, nghệ tươi cạo sạch vỏ, rửa sạch và cắt thành miếng.
 
-Hành khô lột vứt vỏ đi băm và đập dập.
+\nHành khô lột vứt vỏ đi băm và đập dập.
 
-Dùng một cái cối to, giã theo thứ tự từ tiêu, nghệ, gừng, ớt. Cần giã trong một cối đầy nhé mọi người.
+\nDùng một cái cối to, giã theo thứ tự từ tiêu, nghệ, gừng, ớt. Cần giã trong một cối đầy nhé mọi người.
 
-Là gừng tươi rửa thật sạch, cắt thành từng sợi ra.
+\nLà gừng tươi rửa thật sạch, cắt thành từng sợi ra.
 
-Bước 2: Ướp cá và kho cá
-– Bây giờ lấy tô cá ra, đổ hỗn hợp vừa giã trong cối vào, nêm thêm gia vị: muối, nước mắm, đường và dầu ăn, đảo đều cho cá lóc được ngấm đều gia vị.
+\nBước 2: Ướp cá và kho cá\n
+– Bây giờ lấy tô cá ra, đổ hỗn hợp vừa giã trong cối vào, nêm thêm gia vị: muối, nước mắm, đường và dầu ăn, đảo đều cho cá lóc được ngấm đều gia vị.\n
 
 – Khi cá đã ngấm gia vị, bạn bắc nồi lên trên bếp, cho nồi nóng lên sau đó đổ dầu vào, dầu nóng cho 1 chút đường cát vào và để làm caramen. Mục đích là để khi kho, cá sẽ có màu đẹp bắt mắt. Sau đó cho hành tím vào phi thật thơm nhé.
 
-– Khi hành vàng thơm, trút tô cá lóc vừa tẩm ướp vào kho. Kho cho tới khi thịt cá lóc săn lại, bạn tiếp tục đổ ca nước sôi vào xấp xỉ thịt cá, đậy nắp lại.
+\n– Khi hành vàng thơm, trút tô cá lóc vừa tẩm ướp vào kho. Kho cho tới khi thịt cá lóc săn lại, bạn tiếp tục đổ ca nước sôi vào xấp xỉ thịt cá, đậy nắp lại.
 
-– Khi kho, bạn giữ lửa liu riu tới khi cạn sệt phần nước lại là được.
+\n– Khi kho, bạn giữ lửa liu riu tới khi cạn sệt phần nước lại là được.
 
-– Cuối cùng, bạn nêm nếm trở lại một lượt nữa cho vừa miệng rồi nhấc xuống. Như vậy, nồi cá lóc kho nghệ của chúng ta đã hoàn tất rồi.</string>
+\n– Cuối cùng, bạn nêm nếm trở lại một lượt nữa cho vừa miệng rồi nhấc xuống. Như vậy, nồi cá lóc kho nghệ của chúng ta đã hoàn tất rồi.</string>
     <string name="rau_muong_xao_toi">Rau muống là một loại rau xanh có chứa nhiều vitamin A, B, C canxi, photpho và đặc biệt là hàm lượng chất sắt dồi dào. Khi bạn sử dụng rau muống một cách hợp lý sẽ mang lại nhiều tác dụng tốt như: thanh nhiệt, giải đọc, ngừa tiểu đường, tốt cho hệ tim mạch và hạn chế tình trạng thiếu máu.
 
-Nguyên liệu rau muống xào tỏi
-Rau muống: 1 bó
-Tỏi: 4 nhánh
-Dầu ăn, muối, nước mắm, hạt nêm, bột ngọt
-Chanh, ớt
-Các bước thực hiện món rau muống xào tỏi
-Bước 1: Rau muống nhặt thành khúc khoảng 8 – 10 cm. Sau đó, đem ngâm với nước muối loãng trong chừng 10 – 15 phút rồi rửa sạch với 3 lần nước và vớt ra rổ để ráo. Tỏi bóc sạch lớp vỏ khô bên ngoài, đập dập rồi băm nhỏ.
-Bước 2: Chuẩn bị một chảo rộng, cho 1 muỗng canh dầu vào rồi bắc lên bếp đun sôi. Khi dầu sôi, bạn thả tỏi vào phi thơm.
-Bước 3: Khi tỏi ngã vàng và có mùi thơm, bạn cho rau muống đã ráo nước vào. Để lừa vừa rồi đảo rau đều tay.
-Bước 4: Khi rau vừa chín tới, bạn cho nước mắm, muối, hạt nêm, bột ngọt vào nêm nếm vừa ăn rồi tắt bếp. Bạn đừng để rau chín quá sẽ mất đi độ giòn ngon.
-Bước 5: Vắt một ít nước cốt chanh và thái mỏng ớt tươi rồi cho vào chảo rau, đảo đều tay một lần nữa rồi vớt ra dĩa và mời mọi người thưởng thức.
+\nNguyên liệu rau muống xào tỏi
+\nRau muống: 1 bó
+\nTỏi: 4 nhánh
+\nDầu ăn, muối, nước mắm, hạt nêm, bột ngọt
+\nChanh, ớt
+\nCác bước thực hiện món rau muống xào tỏi
+\nBước 1: Rau muống nhặt thành khúc khoảng 8 – 10 cm. Sau đó, đem ngâm với nước muối loãng trong chừng 10 – 15 phút rồi rửa sạch với 3 lần nước và vớt ra rổ để ráo. Tỏi bóc sạch lớp vỏ khô bên ngoài, đập dập rồi băm nhỏ.
+\nBước 2: Chuẩn bị một chảo rộng, cho 1 muỗng canh dầu vào rồi bắc lên bếp đun sôi. Khi dầu sôi, bạn thả tỏi vào phi thơm.
+\nBước 3: Khi tỏi ngã vàng và có mùi thơm, bạn cho rau muống đã ráo nước vào. Để lừa vừa rồi đảo rau đều tay.
+\nBước 4: Khi rau vừa chín tới, bạn cho nước mắm, muối, hạt nêm, bột ngọt vào nêm nếm vừa ăn rồi tắt bếp. Bạn đừng để rau chín quá sẽ mất đi độ giòn ngon.
+\nBước 5: Vắt một ít nước cốt chanh và thái mỏng ớt tươi rồi cho vào chảo rau, đảo đều tay một lần nữa rồi vớt ra dĩa và mời mọi người thưởng thức.
     </string>
-    <string name="my_y">Chuẩn bị nguyên liệu
-Mì Spaghetti: 300g
-Thịt bò: 300g
-Hành tây: 1 củ
-Cần tây: 50g
-Cà chua: 200g (2-3 quả)
-Xốt cà chua: 250g
-Dầu olive: 20ml
-Tỏi băm:  1 muỗng café
-Bơ thực vật: 15g
-Gia vị: muối, đường, tiêu, hạt nêm, dầu ăn
-Quy trình thực hiện
-Bước 1: Sơ chế nguyên liệu tươi sống
-Thịt bò rửa sạch rồi đem đi băm nhỏ hoặc xay nhuyễn, sau đó ướp với các gia vị hạt nêm, đường, dầu olive, tỏi băm trong 15-20 phút để thấm gia vị.
+    <string name="my_y">Chuẩn bị nguyên liệu\n
+Mì Spaghetti: 300g\n
+Thịt bò: 300g\n
+Hành tây: 1 củ\n
+Cần tây: 50g\n
+Cà chua: 200g (2-3 quả)\n
+Xốt cà chua: 250g\n
+Dầu olive: 20ml\n
+Tỏi băm:  1 muỗng café\n
+Bơ thực vật: 15g\n
+Gia vị: muối, đường, tiêu, hạt nêm, dầu ăn\n
+Quy trình thực hiện\n
+Bước 1: Sơ chế nguyên liệu tươi sống\n
+Thịt bò rửa sạch rồi đem đi băm nhỏ hoặc xay nhuyễn, sau đó ướp với các gia vị hạt nêm, đường, dầu olive, tỏi băm trong 15-20 phút để thấm gia vị.\n
 
 Cà chua, hành tây, cần tây rửa sạch với nước muối pha loãng. Để lột vỏ cà chua dễ dàng bạn luộc sơ rồi bỏ hạt và băm nhuyễn. Hai nguyên liệu còn lại thái hạt lựu nhỏ, để riêng từng phần.
 
-Bước 2: Luộc mì
+\nBước 2: Luộc mì\n
 Đun sôi nước, cho 1 muỗng cafe muối vào để mì sau khi luộc có màu vàng bóng và đậm vị hơn. Khi nước sôi, bạn cho mì từ từ vào luộc, sau khoảng 1 phút sợi mì mềm ra và ngập trong nước. Lúc này, dùng đũa đảo nhẹ để mì không dính vào nhau. Luộc thêm 8 -10 phút, khi mì chín hẳn thì bạn vớt ra, rửa sơ qua nước lạnh để mì dai, cho thêm 1 muỗng dầu ăn và trộn đều để sợi mì không bị dính lại với nhau.
-        Bước 3: Làm nước xốt
+        \nBước 3: Làm nước xốt\n
 Làm nóng chảo với một chút dầu olive rồi phi thơm tỏi và hành tây. Sau đó cho cần tây, cà chua vào xào, khi thấy nguyên liệu chín mềm thì tiếp tục thêm xố cà chua có sẵn vào nấu. Hỗn hợp sôi thì bạn thêm thịt bò vào đảo đều, nêm nếm gia vị cho vừa miệng thì đậy nắp, nấu hỗn hợp xốt với lửa nhỏ trong khoảng 20 phút thì tắt bếp
 
-Bước 4: Trình bày
+\nBước 4: Trình bày\n
 Bạn dùng nĩa xoắn mì thành những cuộn tròn ra dĩa và cho phần xốt cà chua thịt bằm đã chuẩn bị lên trên. Bạn có thể cho thêm chút phô mai sợi, lá húng quế để trang trí. Yêu cầu thành phẩm là sợi mì dai, không nát; phần xốt hòa quyện gia vị giữa thịt bò và cà chua, không bị quá chua hoặc quá mặn.
     </string>
+    <string name="bua_mot">Bữa ăn gồm 2 món mặn, một món rau và canh cùng trái cây tráng miệng là thực đơn cung cấp đầy đủ và cân bằng các chất dinh dưỡng bạn có thể tham khảo cho mâm cơm của gia đình mình. \nBạn dễ dàng chuẩn bị các món ba chỉ cháy cạnh, tôm sông rang lá chanh, rau lang xào tỏi và canh cua đồng. Thêm bát cà muối ăn cùng để giảm ngấy và đĩa mít Thái tráng miệng là có ngay mâm cơm tươm tất để cả gia đình cùng quây quần.</string>
+    <string name="bua_ba">Trong những ngày bận rộn, bạn có thể chuẩn bị bữa ăn đơn giản gồm thịt kho trứng cút củ cải và canh thập cẩm giò xay cùng các món rau quả không cần phải nấu nướng là dưa muối chua, dưa chuột ăn kèm sốt mè rang và tráng miệng đào. Thực đơn nhiều rau xanh và trái cây này rất thích hợp cho những ngày hè oi bức. </string>
+    <string name="bua_bon">Bên cạnh đó, các món chim cút nướng, gầu bò nướng sốt teriyaki, canh bí đỏ thịt băm, salad rau mầm, xà lách và cam là thực đơn tham khảo để bạn đổi khẩu vị cho cả gia đình. Bữa ăn thêm hoàn hảo với sốt chanh leo ăn kèm và dứa tráng miệng. </string>
+    <string name="bun_dau">Bún đậu mắm tôm bình dị như chính cái tên của nó, lại vô cùng phù hợp với văn hoá ẩm thực của người Hà Nội: thích ăn tại những quán trong ngõ ngách hay ăn ngay tại những quán ăn vỉa hè. Món ăn nay vô cùng đơn giản, bao gồm bún lá, đậu rán giòn và mắm tôm.
+
+Tuy nhiên hiện nay mọi người thường ăn thêm cùng thịt luộc, chả cốm, nem, lòng,… vô cùng đa dạng. Nếu không biết ăn mắm tôm thì quả thật vô cùng đáng tiếc, bởi lẽ ai đã thưởng thức được món bún đậu mắm tôm thì chắc chắn sẽ đem lòng nghiện món ăn này, một tuần có lẽ phải đi ăn vài lần mới được.
+
+    Địa chỉ bún đậu mắm tôm ngon tại Hà Nội:\n
+
+Bún đậu mắm tôm Hàng Khay: Ngõ 31 Hàng Khay.\n
+Quán bún đậu mắm tôm Cây Bàng, Đại La.\n
+Cửa hàng bún đậu mắm tôm Mã Mây: 8 Mã Mây Hoàn Kiếm.\n
+Bún đậu mắm tôm Ngõ Trạm: 1B Ngõ Trạm Hoàn Kiếm.\n
+Bún đậu mắm tôm ngõ Phất Lộc, Hoàn Kiếm.</string>
+    <string name="banh_do">Một trong những món quà chiều quen thuộc của người Hà Nội lại vô cùng dễ ăn, có thể ăn được bất kể mùa nào, hay buổi nào trong ngày mà lại không bị ngán đó chính là bánh giò. Bánh giò được làm từ bột gạo tẻ, nhân có thịt băm, mộc nhĩ, hành khô tẩm ướp đậm đà ăn rất hợp vị.
+
+Thông thường sẽ ăn bánh giò với dưa góp cho đỡ ngấy, có thể cho thêm xì dầu và tương ớt tuỳ vào khẩu vị mỗi người cũng rất ngon. Đây là một trong những món ăn vặt giống như các thức quà chiều nhưng lại khá đầy đặn, mà giá lại chỉ khoảng 10.000-15.000đ/chiếc nên được mọi người vô cùng ưa thích.
+    Địa chỉ bánh giò ngon tại Hà Nội:\n
+
+Bánh giò Thuỵ Khuê: O5 Thụy Khuê, Tây Hồ.\n
+Hàng bánh giò quê: Vườn Hoa Pasteur, Quận Hai Bà Trưng.\n
+Bánh giò Đông Các: 33 Đông Các, Ô Chợ Dừa, Quận Đống Đa.</string>
+    <string name="com">Nhắc đến thu Hà Nội là nhắc đến hương vị của cốm. Món quà vặt ngọt ngào, dân dã này đã đi cùng với năm tháng của người Tràng An, để mỗi người con xa quê khi nhớ về cố m đều khắc khoải nhớ mong. Còn những du khách khi đã một lần nếm thử sẽ chẳng bao giờ có thể quên được hương vị tròn đầy ấy.
+
+Để có được những hạt cốm xanh thơm ngon thì người làm cốm phải trải qua rất nhiều giai đoạn công phu. Dù là món quà dân dã nhưng để thưởng cốm một cách đúng điệu lại đòi hỏi sự tinh tế của người thưởng thức. Khi ăn cốm không ăn bằng đũa hay thìa mà dùng hai ngón tay nhúm một vài hạt cốm thả vào đầu lưỡi, nhai thật chậm để cảm nhận vị thanh thanh, dẻo ngọt của cốm quyện với hương lá sen bọc ngoài như cả đất trời thu Hà Nội đang thấm dần vào trong cơ thể.
+    Cốm cũng là đặc sản Hà Nội làm quà biếu tặng người thân, bạn bè được rất nhiều người ưa chuộng. Bên cạnh đó cốm cũng được biến tấu làm thành rất nhiều món ngon khác như bánh cốm, cốm xào, chả cốm, kem cốm, chè cốm… góp phần làm phong thú thêm cho nền tinh hoa ẩm thực Hà Thành.
+
+Một số địa chỉ mua cốm và món ngon từ cốm\n
+
+- Cốm làng Vòng: Làng Vòng, Dịch Vọng Hậu, Cầu Giấy.\n
+- Bánh cốm Nguyên Ninh: 65A Hàng Than, Ba Đình.\n
+- Cốm xào: 1A Đinh Liệt, Hoàn Kiếm.\n
+- Xôi cốm chợ Hôm: Cổng chợ Hôm, Trần Xuân Soạn.\n
+- Chè cốm: Chợ Thành Công, Ba Đình.</string>
 </resources>

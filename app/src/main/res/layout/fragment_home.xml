@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF"
+    android:background="#fff"
     tools:context=".fragment.HomeFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -33,7 +33,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:menu="@menu/home_menu"
-            app:navigationIcon="@drawable/ic_back"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:title="Home" />
     </com.google.android.material.appbar.AppBarLayout>

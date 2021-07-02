@@ -20,9 +20,7 @@ class MealAdapter(var clickListner: MealAdapter.OnMealItemClickListner): Recycle
     }
 
     override fun onBindViewHolder(holder: MealAdapter.ViewHolder, position: Int) {
-        holder.mealName.text = mealList[position].name
-        holder.mealImage.setImageResource(mealList[position].image)
-        holder.mealNumberDish.text = mealList[position].dishNumber.toString() + " món."
+        holder.initialize(mealList[position], clickListner)
     }
 
     override fun getItemCount(): Int {
@@ -42,15 +40,15 @@ class MealAdapter(var clickListner: MealAdapter.OnMealItemClickListner): Recycle
         fun initialize(item: Meal, action: OnMealItemClickListner) {
             mealImage.setImageResource(item.image)
             mealName.text = item.name
-            mealNumberDish.text = item.dishNumber.toString()
+            mealNumberDish.text = item.dishNumber.toString() +" món."
 
             itemView.setOnClickListener{
-                action.onItemClick(item, adapterPosition)
+                action.onItemMealClick(item, adapterPosition)
             }
         }
     }
     interface OnMealItemClickListner{
-        fun onItemClick(item: Meal, position: Int)
+        fun onItemMealClick(item: Meal, position: Int)
     }
 
 }

@@ -20,8 +20,7 @@ class DishHomeMainAdapter(var clickListner: HomeMainFragment): RecyclerView.Adap
     }
 
     override fun onBindViewHolder(holder: DishHomeMainAdapter.ViewHolder, position: Int) {
-        holder.dishName.text = dishHomeMainList[position].name
-        holder.dishImage.setImageResource(dishHomeMainList[position].image)
+        holder.initialize(dishHomeMainList[position], clickListner)
     }
 
     override fun getItemCount(): Int {
@@ -41,11 +40,11 @@ class DishHomeMainAdapter(var clickListner: HomeMainFragment): RecyclerView.Adap
             dishName.text = item.name
 
             itemView.setOnClickListener{
-                action.onItemClick(item, adapterPosition)
+                action.onItemDishClick(item, adapterPosition)
             }
         }
     }
     interface OnDishHomeMainItemClickListner{
-        fun onItemClick(item: DishHomeMain, position: Int)
+        fun onItemDishClick(item: DishHomeMain, position: Int)
     }
 }

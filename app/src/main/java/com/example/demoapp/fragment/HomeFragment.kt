@@ -66,9 +66,9 @@ class HomeFragment : Fragment()  {
             true
         }
 
-        homeNavigation.setNavigationOnClickListener{
-            activity?.onBackPressed()
-        }
+//        homeNavigation.setNavigationOnClickListener{
+//            activity?.onBackPressed()
+//        }
         return view
     }
 

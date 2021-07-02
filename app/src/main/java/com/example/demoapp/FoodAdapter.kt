@@ -4,18 +4,18 @@ import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 
-class FoodAdapter(var clickListner: OnDishItemClickListner): RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
+class FoodAdapter(private val dishDataList: ArrayList<Dish>, var clickListner: OnDishItemClickListner): RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
 
-   private var dishList: ArrayList<Dish> = ArrayList()
-
-    fun setData(dishList: ArrayList<Dish>) {
-        this.dishList = dishList
+    val initDishDataList = ArrayList<Dish>().apply {
+        dishDataList.let { addAll(it) }
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.card_view, parent, false)
@@ -23,15 +23,46 @@ class FoodAdapter(var clickListner: OnDishItemClickListner): RecyclerView.Adapte
     }
 
     override fun onBindViewHolder(holder: FoodAdapter.ViewHolder, position: Int) {
-//        holder.itemTitle.text = dishList[position].name
-//        holder.itemImage.setImageResource(dishList[position].image)
-//        holder.itemPrice.text = String.format("%,d", dishList[position].price * 1000) + " Đ"
-//        holder.itemDetail.text = dishList[position].detail
-        holder.initialize(dishList.get(position), clickListner)
+        holder.initialize(dishDataList[position], clickListner)
     }
 
+
     override fun getItemCount(): Int {
-        return dishList.size
+        return dishDataList.size
+    }
+
+    fun getFilter(): Filter {
+        return dataFilter
+    }
+    private val dataFilter = object: Filter(){
+        override fun performFiltering(constraint: CharSequence?): FilterResults {
+            val filterList = mutableListOf<Dish>()
+            if (constraint == null || constraint.isEmpty()){
+                initDishDataList.let {
+                    filterList.addAll(it)
+                }
+            }
+            else {
+                val query = constraint.toString().trim().toLowerCase()
+                initDishDataList.forEach {
+                    if (it.name.toLowerCase().contains(query) ){
+                        filterList.add(it)
+                    }
+                }
+            }
+            val results = FilterResults()
+            results.values = filterList
+            return results
+
+        }
+
+        override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+            if (results?.values is List<*>){
+                dishDataList.clear()
+                dishDataList.addAll(results.values as ArrayList<Dish>)
+                notifyDataSetChanged()
+            }
+        }
     }
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {

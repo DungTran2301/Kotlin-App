@@ -1,5 +1,6 @@
 package com.example.demoapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner {
+class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner, DishHomeMainAdapter.OnDishHomeMainItemClickListner {
     private var mealList: ArrayList<Meal> = ArrayList()
     private var dishList: ArrayList<DishHomeMain> = ArrayList()
     private var layoutMealManager: RecyclerView.LayoutManager? = null
@@ -30,14 +31,8 @@ class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner {
         layoutMealManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         layoutDishManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         addData()
-        tvViewAllMeal = view.findViewById(R.id.tv_view_all_meal)
-        tvViewAllDish = view.findViewById(R.id.tv_view_all_dish)
-
-        recyclerViewMeal = view.findViewById(R.id.rcv_meal_in_main_home)
-        recyclerViewMeal.layoutManager = layoutMealManager
-
-        recyclerViewDish = view.findViewById(R.id.rcv_dish_in_main_home)
-        recyclerViewDish.layoutManager = layoutDishManager
+        setUpTextView(view)
+        setUpRecyclerView(view)
 
         mealAdapter = MealAdapter(this)
         mealAdapter.setData(mealList)
@@ -59,19 +54,43 @@ class HomeMainFragment : Fragment(), MealAdapter.OnMealItemClickListner {
 
         return view
     }
-    fun addData() {
-        mealList.add(Meal("Bữa trưa", 4, R.drawable.meal1, "No detail"))
-        mealList.add(Meal("Bữa tối", 5, R.drawable.meal3, "No detail"))
-        mealList.add(Meal("Bữa trưa", 4, R.drawable.meal4, "No detail"))
-        mealList.add(Meal("Bữa chiều", 4, R.drawable.meal1, "No detail"))
+    fun setUpTextView(view: View) {
+        tvViewAllMeal = view.findViewById(R.id.tv_view_all_meal)
+        tvViewAllDish = view.findViewById(R.id.tv_view_all_dish)
+    }
+    fun setUpRecyclerView(view: View) {
+        recyclerViewMeal = view.findViewById(R.id.rcv_meal_in_main_home)
+        recyclerViewMeal.layoutManager = layoutMealManager
 
-        dishList.add(DishHomeMain("Bún đậu", R.drawable.dishhome1, ""))
-        dishList.add(DishHomeMain("Bánh giò", R.drawable.dishhome2, ""))
-        dishList.add(DishHomeMain("Cốm", R.drawable.dishhome3, ""))
+        recyclerViewDish = view.findViewById(R.id.rcv_dish_in_main_home)
+        recyclerViewDish.layoutManager = layoutDishManager
+    }
+    fun addData() {
+        mealList.add(Meal("Bữa trưa", 4, R.drawable.meal1, resources.getString(R.string.bua_mot)))
+        mealList.add(Meal("Bữa tối", 5, R.drawable.meal3, resources.getString(R.string.bua_ba)))
+        mealList.add(Meal("Bữa trưa", 4, R.drawable.meal4, resources.getString(R.string.bua_bon)))
+        mealList.add(Meal("Bữa chiều", 4, R.drawable.meal1, resources.getString(R.string.bua_mot)))
+
+        dishList.add(DishHomeMain("Bún đậu mắm tôm", R.drawable.dishhome1, resources.getString(R.string.bun_dau)))
+        dishList.add(DishHomeMain("Bánh giò", R.drawable.dishhome2, resources.getString(R.string.banh_do)))
+        dishList.add(DishHomeMain("Cốm", R.drawable.dishhome3, resources.getString(R.string.com)))
 
     }
-    override fun onItemClick(item: Meal, position: Int) {
-        TODO("Not yet implemented")
+    override fun onItemMealClick(item: Meal, position: Int) {
+        var intent = Intent(activity, RecipeActivity::class.java)
+        intent.putExtra("TITLE", "Bữa ăn")
+        intent.putExtra("NAME", item.name)
+        intent.putExtra("DETAIL", item.detail)
+        intent.putExtra("IMAGE", item.image)
+        startActivity(intent)
+    }
+    override fun onItemDishClick(item: DishHomeMain, position: Int) {
+        var intent = Intent(activity, RecipeActivity::class.java)
+        intent.putExtra("TITLE", "Món ăn")
+        intent.putExtra("NAME", item.name)
+        intent.putExtra("DETAIL", item.detail)
+        intent.putExtra("IMAGE", item.image)
+        startActivity(intent)
     }
     private fun makeCurrentFragment(fragment: Fragment) =
         activity?.supportFragmentManager?.beginTransaction()?.apply {

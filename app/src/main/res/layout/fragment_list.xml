@@ -21,6 +21,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/search_bg"
+        android:queryHint="Tìm Kiếm"
         app:layout_constraintTop_toTopOf="@+id/recycleView"
         tools:layout_editor_absoluteX="-16dp" />
 
@@ -33,6 +34,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
